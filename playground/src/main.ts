@@ -1,10 +1,7 @@
 import './style.css'
 
-import { test } from "mypackage"
+import { Timeline } from '@eknowles/timeline'
 
-const app = document.querySelector<HTMLDivElement>('#app')!
-test()
-app.innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+const app = document.querySelector<HTMLDivElement>('#app')!;
+
+(() => new Timeline(app))()

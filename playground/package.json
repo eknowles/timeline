@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "mypackage": "workspace:*"
+    "@eknowles/timeline": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^4.5.4",

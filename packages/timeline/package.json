@@ -1,5 +1,5 @@
 {
-  "name": "mypackage",
+  "name": "@eknowles/timeline",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -7,20 +7,25 @@
   "types": "dist/index.d.ts",
   "unpkg": "dist/index.global.js",
   "jsdelivr": "dist/index.global.js",
-  "files": ["dist"],
-  "author": "zuramai <saugi.dev@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "author": "eknowles",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuramai/vite-ts-starter.git"
+    "url": "git+https://github.com/eknowle/timeline.git"
   },
   "bugs": {
-    "url": "https://github.com/zuramai/vite-ts-starter/issues"
+    "url": "https://github.com/eknowles/timeline/issues"
   },
   "scripts": {
     "dev": "nr tsup --watch",
     "tsup": "tsup src/index.ts --format esm,cjs --dts --no-splitting --clean",
     "build": "nr tsup",
     "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.4.2"
   }
 }
